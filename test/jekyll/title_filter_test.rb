@@ -30,4 +30,9 @@ describe Jekyll::TitleFilter do
     assert_equal "This 'Is A' Title", new_title
   end
 
+  it 'renders' do
+    template = Liquid::Template.parse("{{ 'THIS IS A TITLE' | title }}")
+    assert_equal "This Is A Title", template.render
+  end
+
 end
