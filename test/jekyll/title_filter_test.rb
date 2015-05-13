@@ -1,4 +1,4 @@
-require 'jekyll-title_filter'
+require 'jekyll/title_filter'
 require 'minitest/autorun'
 
 describe Jekyll::TitleFilter do
